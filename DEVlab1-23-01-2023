@@ -1,0 +1,145 @@
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ pwd
+/home/lenovo
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ mkdir Dev1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ ls
+ abc.txt              Documents            'Network Persistent State'
+ Backups              Downloads             new.txt
+ blob_storage         getting-started       Pictures
+ Cache                GPUCache              Preferences
+ CachedData           l1.txt                Projects
+ CachedProfilesData   languagepacks.json    Public
+'Code Cache'          localhost+2-key.pem   qwerty.txt.save
+ Cookies              localhost+2.pem      'Session Storage'
+ Cookies-journal      localhost+3-key.pem   snap
+ Crashpad             localhost+3.pem       Templates
+ Desktop             'Local Storage'        TransportSecurity
+ Dev1                 logs                 'Untitled Document 1'
+ Dictionaries         machineid             User
+ Dockerfile           Music                 Videos
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ cd Dev1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git --version
+git version 2.25.1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git config --global user.name Omchavan123
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git config --global user.email omchavan8898106189@gmail.com
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git config --global user.name "Omchavan123"
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git config --global user.email "omchavan8898106189@gmail.com"
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git clone git@github.com:Omchavan123/DEVlab.git
+Cloning into 'DEVlab'...
+ssh: connect to host github.com port 22: Connection refused
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ cd 
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ cd Dev1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ ls
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ cd
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ cd Dev1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ cd 
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ cd D
+Desktop/      Dev1/         Dictionaries/ Documents/    Downloads/    
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ cd D
+Desktop/      Dev1/         Dictionaries/ Documents/    Downloads/    
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~$ cd Dev1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ ls
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git clone https://github.com/Omchavan123/DEVlab
+Cloning into 'DEVlab'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 863 bytes | 863.00 KiB/s, done.
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ ls
+DEVlab
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1$ cd DEVlab
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git branch
+* main
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git branch branch1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git checkout branch1
+Switched to branch 'branch1'
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git status
+On branch branch1
+nothing to commit, working tree clean
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ ls
+README.md
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ nano Hello.txt
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ ls
+Hello.txt  README.md
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ cat Hello.txt
+Welcome to DevOps Lab
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git status
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git add Hello.txt
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git status
+On branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Hello.txt
+
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git commit -n "The File is committed by branch 1"
+error: pathspec 'The File is committed by branch 1' did not match any file(s) known to git
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git commit -m "The File is committed by branch 1"
+[branch1 e4946e3] The File is committed by branch 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git branch
+* branch1
+  main
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git push origin branch1
+Username for 'https://github.com': Omchavan123
+Password for 'https://Omchavan123@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/Omchavan123/DEVlab/pull/new/branch1
+remote: 
+To https://github.com/Omchavan123/DEVlab
+ * [new branch]      branch1 -> branch1
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git branch
+  branch1
+* main
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ ls
+README.md
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ git pull origin
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 912 bytes | 912.00 KiB/s, done.
+From https://github.com/Omchavan123/DEVlab
+   6208662..c84bff7  main       -> origin/main
+Updating 6208662..c84bff7
+Fast-forward
+ Hello.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ ls
+Hello.txt  README.md
+lenovo@lenovo-ThinkCentre-neo-50s-Gen-3:~/Dev1/DEVlab$ 
+
